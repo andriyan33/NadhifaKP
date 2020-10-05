@@ -1,3 +1,4 @@
+import 'package:nadhifa_project/navigasi.dart';
 import 'package:nadhifa_project/splash_screen.dart';
 import 'package:nadhifa_project/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -10,12 +11,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.pink[100],
       ),
       home: Scaffold(body: SplashScreen()),
     routes: <String, WidgetBuilder>{
-      '/home': (BuildContext context) => new HomeScreen(),
+      '/home': (BuildContext context) => new Navigasi(),
     }
     );
 

@@ -9,11 +9,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   var _current = 0;
   List imgList = [
-    ('https://www.nadhifabeauty.com/wp-content/uploads/2020/09/bannernad1.jpg'),
-    ('https://www.nadhifabeauty.com/wp-content/uploads/2020/09/nadhifa-web1.jpg'),
-    ('https://www.nadhifabeauty.com/wp-content/uploads/2019/09/Nadhifa-1024x640.jpg'),
-    ('https://www.nadhifabeauty.com/wp-content/uploads/2019/08/Website-produk.jpg'),
-    ('https://www.nadhifabeauty.com/wp-content/uploads/2019/08/Website-masker.jpg')
+    'https://www.nadhifabeauty.com/wp-content/uploads/2020/09/bannernad1.jpg',
+    'https://www.nadhifabeauty.com/wp-content/uploads/2020/09/nadhifa-web1.jpg',
+    'https://www.nadhifabeauty.com/wp-content/uploads/2019/09/Nadhifa-1024x640.jpg',
+    'https://www.nadhifabeauty.com/wp-content/uploads/2019/08/Website-produk.jpg',
+    'https://www.nadhifabeauty.com/wp-content/uploads/2019/08/Website-masker.jpg'
   ];
 
   List<T> map<T>(List list, Function handler) {
