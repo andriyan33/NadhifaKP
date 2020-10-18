@@ -37,29 +37,31 @@ class _HomeScreenState extends State<HomeScreen> {
         body: ListView(children: <Widget>[
           Column(children: <Widget>[
             Padding(
-              padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(5, 0, 0, 20),
               child: Container(
-                  height: 400,
+                  height: 300,
                   child: ListView(children: <Widget>[
-                    Row(children: <Widget>[
-                      Image(
-                        image: AssetImage('assets/Nadhifa2.png'),
-                        fit: BoxFit.fitHeight,
-                        height: 280,
-                      ),
-                    ])
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image(
+                            image: AssetImage('assets/Nadhifa2.png'),
+                            fit: BoxFit.fitHeight,
+                            height: 280,
+                          ),
+                        ])
                   ])),
             ),
             //carousel berita :
             Padding(
-              padding: const EdgeInsets.fromLTRB(10, 0, 10, 20),
+              padding: const EdgeInsets.fromLTRB(10, 0, 10, 30),
               child: Container(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     CarouselSlider(
-                      height: 300.0,
+                      height: 250.0,
                       initialPage: 0,
                       enlargeCenterPage: true,
                       autoPlay: true,
@@ -93,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       }).toList(),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 50,
                     ),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.center,

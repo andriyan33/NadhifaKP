@@ -24,7 +24,8 @@ class InfoScreen extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Info'),
+          title: Text('Info',style: new TextStyle(fontSize: 22.0, color: Colors.pinkAccent[700]),
+          ),
           backgroundColor: Colors.pink[100],
         ),
         body: ListView(
