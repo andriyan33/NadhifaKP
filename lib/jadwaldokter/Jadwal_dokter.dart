@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nadhifa_project/jadwaldokter/dokter1.dart';
+import 'package:nadhifa_project/jadwaldokter/dokter2.dart';
+import 'package:nadhifa_project/jadwaldokter/dokter3.dart';
 
 class JadwalScreen extends StatelessWidget {
   @override
@@ -15,8 +18,7 @@ class JadwalScreen extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.fromLTRB(0, 25, 0, 0),
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(10),
+            GestureDetector(
               child: Row(
                 children: <Widget>[
                   Container(
@@ -41,18 +43,24 @@ class JadwalScreen extends StatelessWidget {
                           Text(
                             "Ini adalah contoh artikel Untuk dokter 1",
                             style: TextStyle(color: Colors.white),
-                          )
+                          ),
                         ],
                       ),
                     ),
                   )
                 ],
               ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dokter1Screen()),
+                );
+              },
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            GestureDetector(
               child: Row(
                 children: <Widget>[
+                  Padding(padding: EdgeInsets.fromLTRB(0, 70, 0, 70)),
                   Container(
                     width: 120.0,
                     height: 120.0,
@@ -82,9 +90,14 @@ class JadwalScreen extends StatelessWidget {
                   )
                 ],
               ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dokter2Screen()),
+                );
+              },
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            GestureDetector(
               child: Row(
                 children: <Widget>[
                   Container(
@@ -116,6 +129,12 @@ class JadwalScreen extends StatelessWidget {
                   )
                 ],
               ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dokter3Screen()),
+                );
+              },
             ),
           ],
         ),

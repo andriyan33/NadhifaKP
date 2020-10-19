@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nadhifa_project/home_screen.dart';
 import 'package:nadhifa_project/treatmen.dart';
-import 'package:nadhifa_project/Jadwal_dokter.dart';
+import 'package:nadhifa_project/jadwaldokter/Jadwal_dokter.dart';
 import 'package:nadhifa_project/info.dart';
 
 

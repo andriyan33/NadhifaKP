@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(body: SplashScreen()),
     routes: <String, WidgetBuilder>{
       '/home': (BuildContext context) => new Navigasi(),
-      '/news1': (BuildContext context) => new News1Screen()
+      '/news1': (BuildContext context) => new News1Screen(),
     }
     );
 
