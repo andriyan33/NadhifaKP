@@ -36,11 +36,11 @@ class Dokter2Screen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Klinik 1",
+                          Text("Clinic Rancabolangcore",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 15.0)),
                           Text(
-                            "Ini adalah contoh artikel Untuk Klinik 1",
+                            "Rancabolang (WA Chat Only) : 0823-2020-1882",
                             style: TextStyle(color: Colors.white),
                           ),
                         ],
@@ -76,11 +76,11 @@ class Dokter2Screen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Klinik 2",
+                          Text("Clinic Surapaticore",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 15.0)),
                           Text(
-                            "Ini adalah contoh artikel Untuk Klinik 2",
+                            "Surapati Core (WA Chat Only) : 0812-2222-3249",
                             style: TextStyle(color: Colors.white),
                           )
                         ],

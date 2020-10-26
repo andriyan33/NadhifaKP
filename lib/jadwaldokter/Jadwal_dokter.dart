@@ -37,11 +37,11 @@ class JadwalScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Dokter 1",
+                          Text("Dr. Erna",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 15.0)),
                           Text(
-                            "Ini adalah contoh artikel Untuk dokter 1",
+                            "SENIN - MINGGU at Clinic Surapaticore \n ",
                             style: TextStyle(color: Colors.white),
                           ),
                         ],
@@ -77,11 +77,11 @@ class JadwalScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Dokter 2",
+                          Text("Dr. Wirda",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 15.0)),
                           Text(
-                            "Ini adalah contoh artikel Untuk dokter 2",
+                            "RABU - JUM'AT at Clinic Surapaticore \nSABTU-MINGGU at Clinic Rancabolangcore",
                             style: TextStyle(color: Colors.white),
                           )
                         ],
@@ -116,11 +116,11 @@ class JadwalScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Dokter 3",
+                          Text("Dr. Dwi",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 15.0)),
                           Text(
-                            "Ini adalah contoh artikel Untuk dokter 3",
+                            "SENIN - JUM'AT at Clinic Rancabolangcore",
                             style: TextStyle(color: Colors.white),
                           )
                         ],

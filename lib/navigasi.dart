@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nadhifa_project/home_screen.dart';
-import 'package:nadhifa_project/treatmen.dart';
+import 'package:nadhifa_project/treatment/treatmen.dart';
 import 'package:nadhifa_project/jadwaldokter/Jadwal_dokter.dart';
 import 'package:nadhifa_project/info.dart';
-
 
 class Navigasi extends StatefulWidget {
   @override
@@ -25,9 +24,7 @@ class _NavigasiState extends State<Navigasi> {
         child: currentScreen,
         bucket: bucket,
       ),
-
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
         child: new Row(
@@ -36,19 +33,19 @@ class _NavigasiState extends State<Navigasi> {
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.home),
-              color: currentTab==0? Colors.pink[200] : Colors.grey[400],
+              color: currentTab == 0 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
                   setState(() {
-                  currentScreen = HomeScreen();
-                  currentTab = 0;
-                });
+                    currentScreen = HomeScreen();
+                    currentTab = 0;
+                  });
                 });
               },
             ),
-             IconButton(
+            IconButton(
               icon: Icon(Icons.spa),
-              color: currentTab==1? Colors.pink[200] : Colors.grey[400],
+              color: currentTab == 1 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
                   currentScreen = TreatmenScreen();
@@ -56,9 +53,9 @@ class _NavigasiState extends State<Navigasi> {
                 });
               },
             ),
-             IconButton(
+            IconButton(
               icon: Icon(Icons.calendar_today),
-              color: currentTab==2? Colors.pink[200] : Colors.grey[400],
+              color: currentTab == 2 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
                   currentScreen = JadwalScreen();
@@ -68,7 +65,7 @@ class _NavigasiState extends State<Navigasi> {
             ),
             IconButton(
               icon: Icon(Icons.info),
-              color: currentTab==3? Colors.pink[200] : Colors.grey[400],
+              color: currentTab == 3 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
                   currentScreen = InfoScreen();

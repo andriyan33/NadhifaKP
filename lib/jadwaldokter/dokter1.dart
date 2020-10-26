@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nadhifa_project/jadwaldokter/jadwalDokter1.dart';
-import 'package:nadhifa_project/jadwaldokter/jadwalDokter1b.dart';
 
 class Dokter1Screen extends StatelessWidget {
   @override
@@ -17,45 +16,6 @@ class Dokter1Screen extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.fromLTRB(0, 25, 0, 0),
           children: <Widget>[
-            GestureDetector(
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    width: 120.0,
-                    height: 120.0,
-                    color: Colors.pink[200],
-                    child: new Image.network(
-                      'https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2002117594605/Nadhifa%2520Beauty%2520Clinic%2520Rancabolang-00b03325-6aec-4bbd-9ada-1127160d17f6.jpeg?_src=imagekit&tr=c-at_max,h-512,q-60,w-720'
-                       ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.all(15.0),
-                      height: 120.0,
-                      color: Colors.pink[100],
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text("Klinik 1",
-                              style: TextStyle(
-                                  color: Colors.white, fontSize: 15.0)),
-                          Text(
-                            "Ini adalah contoh artikel Untuk Klinik 1",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => JadwalDokter1a()),
-                );
-              },
-            ),
             GestureDetector(
               child: Row(
                 children: <Widget>[
@@ -76,11 +36,11 @@ class Dokter1Screen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Klinik 2",
+                          Text("Clinic Surapaticore",
                               style: TextStyle(
                                   color: Colors.white, fontSize: 15.0)),
                           Text(
-                            "Ini adalah contoh artikel Untuk Klinik 2",
+                            "Surapati Core (WA Chat Only) : 0812-2222-3249 \n",
                             style: TextStyle(color: Colors.white),
                           )
                         ],
@@ -92,7 +52,7 @@ class Dokter1Screen extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => JadwalDokter1b()),
+                  MaterialPageRoute(builder: (context) => JadwalDokter1()),
                 );
               },
             ),

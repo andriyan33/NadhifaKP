@@ -1,5 +1,4 @@
 import 'package:nadhifa_project/navigasi.dart';
-import 'package:nadhifa_project/news1.dart';
 import 'package:nadhifa_project/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
       home: Scaffold(body: SplashScreen()),
     routes: <String, WidgetBuilder>{
       '/home': (BuildContext context) => new Navigasi(),
-      '/news1': (BuildContext context) => new News1Screen(),
     }
     );
 
