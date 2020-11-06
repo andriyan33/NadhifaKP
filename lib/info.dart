@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
-
-
 
 class InfoScreen extends StatelessWidget {
   @override
@@ -24,7 +20,7 @@ class InfoScreen extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Info',style: new TextStyle(fontSize: 22.0, color: Colors.pinkAccent[700]),
+          title: Text('info Nadhifa Klinik',style: new TextStyle(fontSize: 22.0, color: Colors.pinkAccent[700]),
           ),
           backgroundColor: Colors.pink[100],
         ),

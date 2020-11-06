@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nadhifa_project/components/body.dart';
 import 'package:nadhifa_project/home_screen.dart';
-import 'package:nadhifa_project/treatment/treatmen.dart';
 import 'package:nadhifa_project/jadwaldokter/Jadwal_dokter.dart';
 import 'package:nadhifa_project/info.dart';
 
@@ -48,7 +48,7 @@ class _NavigasiState extends State<Navigasi> {
               color: currentTab == 1 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
-                  currentScreen = TreatmenScreen();
+                  currentScreen = Body();
                   currentTab = 1;
                 });
               },
