@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:nadhifa_project/components/treatment_info.dart';
+import 'package:nadhifa_project/components/jadwal_info.dart';
 import 'package:nadhifa_project/contstants.dart';
-import 'package:nadhifa_project/models/Treatment.dart';
+import 'package:nadhifa_project/models/jadwalDokter.dart';
 
-import 'item_tr.dart';
+import 'item_jd.dart';
 
-class BodyTreatment extends StatelessWidget {
+class BodyJadwal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,18 +15,18 @@ class BodyTreatment extends StatelessWidget {
             child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
           child: GridView.builder(
-            itemCount: treatments.length,
+            itemCount: jadwals.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               mainAxisSpacing: kDefaultPaddin,
               crossAxisSpacing: kDefaultPaddin,
               childAspectRatio: 0.75,
             ),
-            itemBuilder: (context, index) => ItemTr(
-              treatment: treatments[index],
+            itemBuilder: (context, index) => ItemJd(
+              jadwal: jadwals[index],
               press: () => Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => TreatmentInfo(
-                    treatment: treatments[index],
+                  MaterialPageRoute(builder: (context) => JadwalInfo(
+                    jadwal: jadwals[index],
                   ))),
             ),
           ),

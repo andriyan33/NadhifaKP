@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nadhifa_project/components/Body_Jdk.dart';
 import 'package:nadhifa_project/components/body.dart';
 import 'package:nadhifa_project/home_screen.dart';
-import 'package:nadhifa_project/jadwaldokter/Jadwal_dokter.dart';
 import 'package:nadhifa_project/info.dart';
 
 class Navigasi extends StatefulWidget {
@@ -48,7 +48,7 @@ class _NavigasiState extends State<Navigasi> {
               color: currentTab == 1 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
-                  currentScreen = Body();
+                  currentScreen = BodyTreatment();
                   currentTab = 1;
                 });
               },
@@ -58,7 +58,7 @@ class _NavigasiState extends State<Navigasi> {
               color: currentTab == 2 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
-                  currentScreen = JadwalScreen();
+                  currentScreen = BodyJadwal();
                   currentTab = 2;
                 });
               },
