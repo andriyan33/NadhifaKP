@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'title_with_more_btn.dart';
 import 'header_with_searchbox.dart';
 
-class BodyHome extends StatefulWidget {
-  const BodyHome({Key key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key key}) : super(key: key);
 
   @override
-  _BodyHomeState createState() => _BodyHomeState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _BodyHomeState extends State<BodyHome> {
+class _HomeScreenState extends State<HomeScreen> {
     var _current = 0;
   List imgList = [
     ('https://www.nadhifabeauty.com/wp-content/uploads/2020/09/bannernad1.jpg'),
