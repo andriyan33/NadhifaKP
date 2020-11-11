@@ -24,14 +24,17 @@ class BodyJadwal extends StatelessWidget {
             ),
             itemBuilder: (context, index) => ItemJd(
               jadwal: jadwals[index],
-              press: () => Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => JadwalInfo(
-                    jadwal: jadwals[index],
-                  ))),
+              press: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => JadwalInfo(
+                            jadwal: jadwals[index],
+                          ))),
             ),
           ),
         ))
       ],
     );
   }
+
 }

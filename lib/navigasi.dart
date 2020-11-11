@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nadhifa_project/components/Body_Jdk.dart';
-import 'package:nadhifa_project/components/body.dart';
+import 'package:nadhifa_project/components/body_tr.dart';
 import 'package:nadhifa_project/home_screen.dart';
 import 'package:nadhifa_project/info.dart';
 

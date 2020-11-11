@@ -15,7 +15,7 @@ class ItemJd extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(kDefaultPaddin),
+              padding: EdgeInsets.all(20),
               //height: 180,
               //width: 160,
               decoration: BoxDecoration(
@@ -38,4 +38,5 @@ class ItemJd extends StatelessWidget {
       ),
     );
   }
+  
 }
