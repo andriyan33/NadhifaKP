@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'title_with_more_btn.dart';
 import 'header_with_searchbox.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -34,10 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: <Widget>[
           HeaderWithSearchBox(size: size),
-          TitleWithMoreBtn(
-            title: "Utama",
-            Prress: () {},
-          ),
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 0, 10, 30),
               child: Container(
