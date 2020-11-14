@@ -12,6 +12,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
     var _current = 0;
   List imgList = [
+    ('https://www.nadhifabeauty.com/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-10-at-11.37.12-1-1024x640.jpeg'),
     ('https://www.nadhifabeauty.com/wp-content/uploads/2020/09/bannernad1.jpg'),
     ('https://www.nadhifabeauty.com/wp-content/uploads/2020/09/nadhifa-web1.jpg'),
     ('https://www.nadhifabeauty.com/wp-content/uploads/2019/09/Nadhifa-1024x640.jpg'),

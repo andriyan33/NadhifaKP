@@ -7,37 +7,167 @@ class JadwalInfo extends StatelessWidget {
   const JadwalInfo({Key key, this.jadwal}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    Widget textSection = Container(
-      padding: const EdgeInsets.all(32),
-      child: Text(
-        'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
-        'Alps. Situated 1,578 meters above sea level, it is one of the '
-        'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
-        'half-hour walk through pastures and pine forest, leads you to the '
-        'lake, which warms to 20 degrees Celsius in the summer. Activities '
-        'enjoyed here include rowing, and riding the summer toboggan run.',
-        softWrap: true,
-      ),
-    );
-
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
+    return Scaffold(
+      appBar: AppBar(
           title: Text(
             jadwal.title,
             style: new TextStyle(fontSize: 22.0, color: Colors.pinkAccent[700]),
           ),
           backgroundColor: Colors.pink[100],
         ),
-        body: ListView(
-          children: [
+      body: new Container(
+        child: ListView(
+          children: <Widget>[
             Image.asset(
               jadwal.image,
               width: 600,
               height: 240,
               fit: BoxFit.cover,
             ),
-            textSection,
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.pink[200],
+                    child: new Icon(
+                      Icons.home,
+                      color: Colors.white,
+                      size: 50.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.all(15.0),
+                      height: 100.0,
+                      color: Colors.pink[100],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Artikel 1",
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 15.0)),
+                          Text(
+                            "Ini adalah contoh artikel pada listview dengan versi custom",
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.pink[200],
+                    child: new Icon(
+                      Icons.home,
+                      color: Colors.white,
+                      size: 50.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.all(15.0),
+                      height: 100.0,
+                      color: Colors.pink[100],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Artikel 2",
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 15.0)),
+                          Text(
+                            "Ini adalah contoh artikel pada listview dengan versi custom",
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.pink[200],
+                    child: new Icon(
+                      Icons.home,
+                      color: Colors.white,
+                      size: 50.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.all(15.0),
+                      height: 100.0,
+                      color: Colors.pink[100],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Artikel 3",
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 15.0)),
+                          Text(
+                            "Ini adalah contoh artikel pada listview dengan versi custom",
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.pink[200],
+                    child: new Icon(
+                      Icons.home,
+                      color: Colors.white,
+                      size: 50.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.all(15.0),
+                      height: 100.0,
+                      color: Colors.pink[100],
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Artikel 4",
+                              style: TextStyle(
+                                  color: Colors.white, fontSize: 15.0)),
+                          Text(
+                            "Ini adalah contoh artikel pada listview dengan versi custom",
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),

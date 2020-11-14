@@ -19,7 +19,7 @@ List<Treatment> treatments = [
     title: "Facial",
     price: 150,
     description: "contohText",
-    image: "assets/images/tr_2.png",
+    image: "assets/images/tr_F.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -27,7 +27,7 @@ List<Treatment> treatments = [
     title: "Microdemabrasi",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_2.png",
+    image: "assets/images/micro.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -35,7 +35,7 @@ List<Treatment> treatments = [
     title: "Chemical Peeling",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_CP.JPG",
+    image: "assets/images/tr_CP_Lands.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -43,7 +43,7 @@ List<Treatment> treatments = [
     title: "Mesotheraphy",
     price: 255,
     description: "contohText",
-    image:"assets/images/tr_2.png",
+    image:"assets/images/tr_MT.JPG",
    color: Colors.pink[200],
   ),
   Treatment(
@@ -51,7 +51,7 @@ List<Treatment> treatments = [
     title: "Radio Frequency",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_2.png",
+    image: "assets/images/radioF.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -59,7 +59,7 @@ List<Treatment> treatments = [
     title: "Insta Glow Treatment",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_2.png",
+    image: "assets/images/Igt.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -67,7 +67,7 @@ List<Treatment> treatments = [
     title: "Platelet Rich Plasma",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_1.JPG",
+    image: "assets/images/tr_PRP.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -75,7 +75,7 @@ List<Treatment> treatments = [
     title: "Intense Pulsed Light",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_1.JPG",
+    image: "assets/images/tr_IPL.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -83,7 +83,7 @@ List<Treatment> treatments = [
     title: "Laser Erbium",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_1.JPG",
+    image: "assets/images/tr_LE.JPG",
     color: Colors.pink[200],
   ),
   Treatment(
@@ -91,7 +91,7 @@ List<Treatment> treatments = [
     title: "Laser Carbon Blackdoll",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_1.JPG",
+    image: "assets/images/lcb.JPG",
     color: Colors.pink[200],
   ),
    Treatment(
@@ -99,7 +99,7 @@ List<Treatment> treatments = [
     title: "Treadlift Non Needle PDO",
     price: 255,
     description: "contohText",
-    image: "assets/images/tr_1.JPG",
+    image: "assets/images/tnn.JPG",
     color: Colors.pink[200],
   ),
 ];

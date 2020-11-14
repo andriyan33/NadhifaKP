@@ -31,7 +31,7 @@ class ItemJd extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(
               jadwal.title,
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(color: Colors.black),
             ),
           ),
         ],
