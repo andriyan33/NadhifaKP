@@ -16,18 +16,18 @@ class ItemTr extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(kDefaultPaddin),
+              padding: EdgeInsets.all(6),
               //height: 180,
               //width: 160,
               decoration: BoxDecoration(
                 color: treatment.color,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(8),
               ),
               child: Image.asset(
-                treatment.image,
+                treatment.image,    
               ),
             ),
-          ), 
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(

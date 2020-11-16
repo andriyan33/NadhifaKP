@@ -10,9 +10,10 @@ class BodyTreatment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: new Text(
           "Treatment",
-          style: TextStyle(color: Colors.pink[500]),
+          style: TextStyle(color: Colors.white),
         ),
       ),
       body: new Column(

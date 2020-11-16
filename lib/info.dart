@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:nadhifa_project/utils/icon_svg_icons.dart';
 
 class InfoScreen extends StatelessWidget {
   InfoScreen({Key key}) : super(key: key);
@@ -7,9 +8,10 @@ class InfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) => new Scaffold(
         appBar: new AppBar(
+          centerTitle: true,
           title: new Text(
             "Info Klinik",
-            style: TextStyle(color: Colors.pink[500]),
+            style: TextStyle(color: Colors.white),
           ),
         ),
         body: new Center(
@@ -30,10 +32,10 @@ class InfoScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: FlatButton.icon(
-                          icon: Icon(Icons.add_to_home_screen),
+                          icon: Icon(IconSvg.web, color: Colors.pink[300]),
                           label: Text(
                             "Buka WebSite",
-                            style: TextStyle(fontSize: 25),
+                            style: TextStyle(fontSize: 25,color: Colors.pink[300]),
                           ),
                           onPressed: () =>
                               launch("https://www.nadhifabeauty.com"),
@@ -53,10 +55,10 @@ class InfoScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: FlatButton.icon(
-                          icon: Icon(Icons.add_to_queue),
+                          icon: Icon(IconSvg.instagram, color: Colors.pink[300]),
                           label: Text(
                             "Buka Instagram",
-                            style: TextStyle(fontSize: 25),
+                            style: TextStyle(fontSize: 25,color: Colors.pink[300],),
                           ),
                           onPressed: () => launch(
                               "https://www.instagram.com/nadhifabeautycare/"),
@@ -78,9 +80,9 @@ class InfoScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: FlatButton.icon(
-                          icon: Icon(Icons.email),
+                          icon: Icon(IconSvg.mail, color: Colors.pink[300]),
                           label: Text("Kirim Email",
-                              style: TextStyle(fontSize: 25)),
+                              style: TextStyle(fontSize: 25,color: Colors.pink[300],)),
                           onPressed: () => launch(
                               "mailto:contact@nadhifabeauty.com.in?subject=Hi&body=Tulis%20disini"),
                         ),
@@ -100,9 +102,9 @@ class InfoScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: FlatButton.icon(
-                          icon: Icon(Icons.sms),
-                          label: Text("Kirim Pesan whatsApp",
-                              style: TextStyle(fontSize: 25)),
+                          icon: Icon(IconSvg.whatsapp, color: Colors.pink[300]),
+                          label: Text("Pesan whatsApp",
+                              style: TextStyle(fontSize: 25,color: Colors.pink[300],)),
                           onPressed: () =>
                               launch("https://wa.me/6285155224441"),
                         ),

@@ -10,9 +10,11 @@ class BodyJadwal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 10,
+        centerTitle: true,
         title: new Text(
           "Jadwal Dokter",
-          style: TextStyle(color: Colors.pink[500]),
+          style: TextStyle(color: Colors.white),
         ),
       ),
       body: new Column(

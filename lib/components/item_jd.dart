@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nadhifa_project/contstants.dart';
 import 'package:nadhifa_project/models/jadwalDokter.dart';
 
 class ItemJd extends StatelessWidget {
@@ -15,9 +14,9 @@ class ItemJd extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(20),
-              //height: 180,
-              //width: 160,
+              padding: EdgeInsets.all(0),
+              // height: 20,
+              // width: 29,
               decoration: BoxDecoration(
                 color: jadwal.color,
                 borderRadius: BorderRadius.circular(16),
@@ -26,17 +25,19 @@ class ItemJd extends StatelessWidget {
                 jadwal.image,
               ),
             ),
-          ), 
+          ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
+            padding: const EdgeInsets.symmetric(vertical: 20),
             child: Text(
               jadwal.title,
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(
+                  color: Colors.pink[200],
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold),
             ),
           ),
         ],
       ),
     );
   }
-  
 }

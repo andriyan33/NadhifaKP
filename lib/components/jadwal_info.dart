@@ -9,12 +9,17 @@ class JadwalInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
-            jadwal.title,
-            style: new TextStyle(fontSize: 22.0, color: Colors.pinkAccent[700]),
-          ),
-          backgroundColor: Colors.pink[100],
+        centerTitle: true,
+        title: Text(
+          jadwal.title,
+          style: new TextStyle(fontSize: 22.0, color: Colors.white),
         ),
+        backgroundColor: Colors.pink[100],
+        automaticallyImplyLeading: true,
+          leading: IconButton(icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(), 
+          ),
+      ),
       body: new Container(
         child: ListView(
           children: <Widget>[
@@ -33,7 +38,7 @@ class JadwalInfo extends StatelessWidget {
                     height: 100.0,
                     color: Colors.pink[200],
                     child: new Icon(
-                      Icons.home,
+                      Icons.person,
                       color: Colors.white,
                       size: 50.0,
                     ),
@@ -46,12 +51,12 @@ class JadwalInfo extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Artikel 1",
+                          Text(jadwal.description1,
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 15.0)),
+                                  color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.bold)),
                           Text(
-                            "Ini adalah contoh artikel pada listview dengan versi custom",
-                            style: TextStyle(color: Colors.white),
+                            jadwal.description2,
+                            style: TextStyle(color: Colors.white, fontSize: 18.0),
                           )
                         ],
                       ),
@@ -69,7 +74,7 @@ class JadwalInfo extends StatelessWidget {
                     height: 100.0,
                     color: Colors.pink[200],
                     child: new Icon(
-                      Icons.home,
+                      Icons.person,
                       color: Colors.white,
                       size: 50.0,
                     ),
@@ -82,84 +87,12 @@ class JadwalInfo extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("Artikel 2",
+                          Text(jadwal.description3,
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 15.0)),
+                                  color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.bold)),
                           Text(
-                            "Ini adalah contoh artikel pada listview dengan versi custom",
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.pink[200],
-                    child: new Icon(
-                      Icons.home,
-                      color: Colors.white,
-                      size: 50.0,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.all(15.0),
-                      height: 100.0,
-                      color: Colors.pink[100],
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text("Artikel 3",
-                              style: TextStyle(
-                                  color: Colors.white, fontSize: 15.0)),
-                          Text(
-                            "Ini adalah contoh artikel pada listview dengan versi custom",
-                            style: TextStyle(color: Colors.white),
-                          )
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.pink[200],
-                    child: new Icon(
-                      Icons.home,
-                      color: Colors.white,
-                      size: 50.0,
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.all(15.0),
-                      height: 100.0,
-                      color: Colors.pink[100],
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text("Artikel 4",
-                              style: TextStyle(
-                                  color: Colors.white, fontSize: 15.0)),
-                          Text(
-                            "Ini adalah contoh artikel pada listview dengan versi custom",
-                            style: TextStyle(color: Colors.white),
+                            jadwal.description4,
+                            style: TextStyle(color: Colors.white, fontSize: 18.0),
                           )
                         ],
                       ),

@@ -33,6 +33,7 @@ class _NavigasiState extends State<Navigasi> {
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.home),
+              tooltip: 'Home',
               color: currentTab == 0 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
@@ -45,6 +46,7 @@ class _NavigasiState extends State<Navigasi> {
             ),
             IconButton(
               icon: Icon(Icons.spa),
+              tooltip: 'Treatment',
               color: currentTab == 1 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
@@ -55,6 +57,7 @@ class _NavigasiState extends State<Navigasi> {
             ),
             IconButton(
               icon: Icon(Icons.calendar_today),
+              tooltip: 'Jadwal Dokter',
               color: currentTab == 2 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
@@ -65,6 +68,7 @@ class _NavigasiState extends State<Navigasi> {
             ),
             IconButton(
               icon: Icon(Icons.info),
+              tooltip: 'Info',
               color: currentTab == 3 ? Colors.pink[200] : Colors.grey[400],
               onPressed: () {
                 setState(() {
