@@ -25,7 +25,7 @@ class BodyTreatment extends StatelessWidget {
             child: GridView.builder(
               itemCount: treatments.length,
               padding:
-              const EdgeInsets.symmetric(vertical: kDefaultPaddin + 25),
+                  const EdgeInsets.symmetric(vertical: kDefaultPaddin + 25),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: kDefaultPaddin,
