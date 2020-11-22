@@ -3,6 +3,7 @@ import 'package:nadhifa_project/components/Body_Jdk.dart';
 import 'package:nadhifa_project/components/home_screen.dart';
 import 'package:nadhifa_project/components/body_tr.dart';
 import 'package:nadhifa_project/info.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 class Navigasi extends StatefulWidget {
   @override
@@ -10,76 +11,67 @@ class Navigasi extends StatefulWidget {
 }
 
 class _NavigasiState extends State<Navigasi> {
-  int currentTab = 0;
+  int _selectedIndex = 0;
   final List<Widget> screens = [
     HomeScreen(),
   ];
+  final List<Widget> _widgetOptions = [
+    HomeScreen(),
+    BodyTreatment(),
+    BodyJadwal(),
+    InfoScreen(),
+  ];
 
-  Widget currentScreen = HomeScreen();
-  final PageStorageBucket bucket = PageStorageBucket();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageStorage(
-        child: currentScreen,
-        bucket: bucket,
+      body: Container(
+        child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
-        child: new Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            IconButton(
-              icon: Icon(Icons.home),
-              tooltip: 'Home',
-              color: currentTab == 0 ? Colors.pink[200] : Colors.grey[400],
-              onPressed: () {
-                setState(() {
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(color: Colors.white, boxShadow: [
+          BoxShadow(blurRadius: 20, color: Colors.pink[100])
+        ]),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
+            child: GNav(
+                gap: 8,
+                activeColor: Colors.white,
+                iconSize: 24,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                duration: Duration(milliseconds: 800),
+                tabBackgroundColor: Colors.pink[100],
+                tabs: [
+                  GButton(
+                    icon: Icons.home,
+                    text: 'Home',
+                    iconColor: Colors.pink[200],
+                  ),
+                  GButton(
+                    icon: Icons.spa,
+                    text: 'Treatment',
+                    iconColor: Colors.pink[200],
+                  ),
+                  GButton(
+                    icon: Icons.calendar_today,
+                    text: 'Jadwal Dokter',
+                    iconColor: Colors.pink[200],
+                  ),
+                  GButton(
+                    icon: Icons.info,
+                    text: 'Info',
+                    iconColor: Colors.pink[200],
+                  ),
+                ],
+                selectedIndex: _selectedIndex,
+                onTabChange: (index) {
                   setState(() {
-                    currentScreen = HomeScreen();
-                    currentTab = 0;
+                    _selectedIndex = index;
                   });
-                });
-              },
-            ),
-            IconButton(
-              icon: Icon(Icons.spa),
-              tooltip: 'Treatment',
-              color: currentTab == 1 ? Colors.pink[200] : Colors.grey[400],
-              onPressed: () {
-                setState(() {
-                  currentScreen = BodyTreatment();
-                  currentTab = 1;
-                });
-              },
-            ),
-            IconButton(
-              icon: Icon(Icons.calendar_today),
-              tooltip: 'Jadwal Dokter',
-              color: currentTab == 2 ? Colors.pink[200] : Colors.grey[400],
-              onPressed: () {
-                setState(() {
-                  currentScreen = BodyJadwal();
-                  currentTab = 2;
-                });
-              },
-            ),
-            IconButton(
-              icon: Icon(Icons.info),
-              tooltip: 'Info',
-              color: currentTab == 3 ? Colors.pink[200] : Colors.grey[400],
-              onPressed: () {
-                setState(() {
-                  currentScreen = InfoScreen();
-                  currentTab = 3;
-                });
-              },
-            ),
-          ],
+                }),
+          ),
         ),
-        color: Colors.white,
       ),
     );
   }

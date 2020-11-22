@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nadhifa_project/models/jadwalDokter.dart';
+import 'package:nadhifa_project/utils/icon_svg_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class JadwalInfo extends StatelessWidget {
   final Jadwal jadwal;
@@ -16,9 +18,10 @@ class JadwalInfo extends StatelessWidget {
         ),
         backgroundColor: Colors.pink[100],
         automaticallyImplyLeading: true,
-          leading: IconButton(icon: Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () => Navigator.of(context).pop(), 
-          ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: new Container(
         child: ListView(
@@ -53,10 +56,13 @@ class JadwalInfo extends StatelessWidget {
                         children: <Widget>[
                           Text(jadwal.description1,
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.bold)),
+                                  color: Colors.white,
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold)),
                           Text(
                             jadwal.description2,
-                            style: TextStyle(color: Colors.white, fontSize: 18.0),
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 18.0),
                           )
                         ],
                       ),
@@ -89,10 +95,13 @@ class JadwalInfo extends StatelessWidget {
                         children: <Widget>[
                           Text(jadwal.description3,
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.bold)),
+                                  color: Colors.white,
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold)),
                           Text(
                             jadwal.description4,
-                            style: TextStyle(color: Colors.white, fontSize: 18.0),
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 18.0),
                           )
                         ],
                       ),
@@ -103,6 +112,18 @@ class JadwalInfo extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.white,
+        elevation: 2,
+        child: Icon(
+          IconSvg.whatsapp,
+          color: Colors.pink[300],
+          size: 35,
+        ),
+        onPressed: () {
+          launch(jadwal.phone);
+        },
       ),
     );
   }

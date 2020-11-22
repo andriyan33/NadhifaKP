@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:nadhifa_project/utils/icon_svg_icons.dart';
+import 'package:nadhifa_project/utils/info_whatsapp.dart';
 
 class InfoScreen extends StatelessWidget {
   InfoScreen({Key key}) : super(key: key);
@@ -35,7 +36,8 @@ class InfoScreen extends StatelessWidget {
                           icon: Icon(IconSvg.web, color: Colors.pink[300]),
                           label: Text(
                             "Buka WebSite",
-                            style: TextStyle(fontSize: 25,color: Colors.pink[300]),
+                            style: TextStyle(
+                                fontSize: 25, color: Colors.pink[300]),
                           ),
                           onPressed: () =>
                               launch("https://www.nadhifabeauty.com"),
@@ -55,10 +57,14 @@ class InfoScreen extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: FlatButton.icon(
-                          icon: Icon(IconSvg.instagram, color: Colors.pink[300]),
+                          icon:
+                              Icon(IconSvg.instagram, color: Colors.pink[300]),
                           label: Text(
                             "Buka Instagram",
-                            style: TextStyle(fontSize: 25,color: Colors.pink[300],),
+                            style: TextStyle(
+                              fontSize: 25,
+                              color: Colors.pink[300],
+                            ),
                           ),
                           onPressed: () => launch(
                               "https://www.instagram.com/nadhifabeautycare/"),
@@ -82,7 +88,10 @@ class InfoScreen extends StatelessWidget {
                         child: FlatButton.icon(
                           icon: Icon(IconSvg.mail, color: Colors.pink[300]),
                           label: Text("Kirim Email",
-                              style: TextStyle(fontSize: 25,color: Colors.pink[300],)),
+                              style: TextStyle(
+                                fontSize: 25,
+                                color: Colors.pink[300],
+                              )),
                           onPressed: () => launch(
                               "mailto:contact@nadhifabeauty.com.in?subject=Hi&body=Tulis%20disini"),
                         ),
@@ -104,9 +113,17 @@ class InfoScreen extends StatelessWidget {
                         child: FlatButton.icon(
                           icon: Icon(IconSvg.whatsapp, color: Colors.pink[300]),
                           label: Text("Pesan whatsApp",
-                              style: TextStyle(fontSize: 25,color: Colors.pink[300],)),
-                          onPressed: () =>
-                              launch("https://wa.me/6285155224441"),
+                              style: TextStyle(
+                                fontSize: 25,
+                                color: Colors.pink[300],
+                              )),
+                          onPressed: () {
+                            // pindah ke halaman simple
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => InfoWhatsApp()));
+                          },
                         ),
                       ),
                     ],

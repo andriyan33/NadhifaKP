@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nadhifa_project/models/Treatment.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:nadhifa_project/utils/icon_svg_icons.dart';
 
 class TreatmentInfo extends StatelessWidget {
   final Treatment treatment;
@@ -68,13 +70,14 @@ class TreatmentInfo extends StatelessWidget {
                       color: Colors.black54),
                   children: <TextSpan>[
                 TextSpan(
-                    text: 'Rp.' + treatment.price.toString() +'.000',
+                    text: 'Rp.' + treatment.price.toString() + '.000',
                     style: TextStyle(
                         color: Colors.black54,
                         fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w900)),
-                TextSpan(text: ' doang!',
+                TextSpan(
+                    text: ' doang!',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w300,
@@ -113,6 +116,14 @@ class TreatmentInfo extends StatelessWidget {
             ),
             textSection,
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.white,
+          elevation: 2,
+          child: Icon(IconSvg.whatsapp, color: Colors.pink[300], size:35,),
+          onPressed: () {
+            launch("https://wa.me/6285155224441");
+          },
         ),
       ),
     );
