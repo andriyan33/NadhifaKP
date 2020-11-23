@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nadhifa_project/faq.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:nadhifa_project/utils/icon_svg_icons.dart';
 import 'package:nadhifa_project/utils/info_whatsapp.dart';
@@ -123,6 +124,36 @@ class InfoScreen extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => InfoWhatsApp()));
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Card(
+                  shape: RoundedRectangleBorder(
+                    side: new BorderSide(color: Colors.pink[100], width: 2.0),
+                    borderRadius: BorderRadius.circular(25.0),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(30.0),
+                        child: FlatButton.icon(
+                          icon: Icon(Icons.new_releases, color: Colors.pink[300]),
+                          label: Text("FAQ",
+                              style: TextStyle(
+                                fontSize: 25,
+                                color: Colors.pink[300],
+                              )),
+                          onPressed: () {
+                            // pindah ke halaman simple
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => FaqScreen()));
                           },
                         ),
                       ),
