@@ -37,15 +37,10 @@ class JadwalInfo extends StatelessWidget {
               child: Row(
                 children: <Widget>[
                   Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.pink[200],
-                    child: new Icon(
-                      Icons.person,
-                      color: Colors.white,
-                      size: 50.0,
-                    ),
-                  ),
+                      width: 100.0,
+                      height: 100.0,
+                      color: Colors.pink[200],
+                      child: Image.asset("assets/icon_dokter.png")),
                   Expanded(
                     child: Container(
                       padding: EdgeInsets.all(15.0),
@@ -76,15 +71,10 @@ class JadwalInfo extends StatelessWidget {
               child: Row(
                 children: <Widget>[
                   Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.pink[200],
-                    child: new Icon(
-                      Icons.person,
-                      color: Colors.white,
-                      size: 50.0,
-                    ),
-                  ),
+                      width: 100.0,
+                      height: 100.0,
+                      color: Colors.pink[200],
+                      child: Image.asset("assets/icon_dokter.png")),
                   Expanded(
                     child: Container(
                       padding: EdgeInsets.all(15.0),

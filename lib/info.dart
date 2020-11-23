@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nadhifa_project/faq.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:nadhifa_project/utils/icon_svg_icons.dart';
-import 'package:nadhifa_project/utils/info_whatsapp.dart';
+import 'package:nadhifa_project/info_whatsapp.dart';
 
 class InfoScreen extends StatelessWidget {
   InfoScreen({Key key}) : super(key: key);
@@ -48,6 +48,7 @@ class InfoScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 10.0),
                 Card(
                   shape: RoundedRectangleBorder(
                     side: new BorderSide(color: Colors.pink[100], width: 2.0),

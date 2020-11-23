@@ -58,6 +58,12 @@ flutter:
   assets:
     - assets/Nadhifa.png
     - assets/Nadhifa2.png
+    - assets/baner1.jpeg
+    - assets/baner2.jpeg
+    - assets/baner3.jpeg
+    - assets/baner4.jpeg
+    - assets/baner5.jpeg
+    - assets/icon_dokter.png
     - assets/NadhifaWeb.jpg
     - assets/images/
     
