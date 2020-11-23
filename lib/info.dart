@@ -19,8 +19,9 @@ class InfoScreen extends StatelessWidget {
         body: new Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: ListView(
+              padding: EdgeInsets.fromLTRB(20, 80, 20, 20),
+              //mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Card(
                   color: Colors.pink[50],
@@ -132,6 +133,7 @@ class InfoScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 10.0),
                 Card(
+                  color: Colors.pink[50],
                   shape: RoundedRectangleBorder(
                     side: new BorderSide(color: Colors.pink[100], width: 2.0),
                     borderRadius: BorderRadius.circular(25.0),

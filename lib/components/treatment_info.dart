@@ -77,7 +77,7 @@ class TreatmentInfo extends StatelessWidget {
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w900)),
                 TextSpan(
-                    text: ' doang!',
+                    text: ' Saja!',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w300,

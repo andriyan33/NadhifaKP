@@ -32,13 +32,13 @@ class ItemTr extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(
               treatment.title,
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
           ),
-          Text(
+         /*  Text(
             "\Start From ${treatment.price}K",
             style: TextStyle(fontWeight: FontWeight.bold),
-          )
+          ) */
         ],
       ),
     );

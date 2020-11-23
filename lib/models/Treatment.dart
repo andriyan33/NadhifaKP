@@ -27,7 +27,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 2,
     title: "Microdemabrasi",
-    price: 255,
+    price: 175,
     description: "treatment yang bertujuan untuk menormalkan lagi wajah Anda dari jerawat, tentu saja penghilangan jerawat dan mengembalikan kulit wajah bekas jerawat biasanya banyak lubang menjadi untuh secara normal.",
     image: "assets/images/micro.JPG",
     color: Colors.pink[100],
@@ -36,7 +36,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 3,
     title: "Chemical Peeling",
-    price: 255,
+    price: 400,
     description: "Merupakan tindakan pengolesan bahan kimia iritan untuk membantu mempercepat proses pengelupasan kulit secara metaboli.",
     image: "assets/images/tr_CP_Lands.JPG",
     color: Colors.pink[100],
@@ -45,7 +45,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 4,
     title: "Mesotheraphy",
-    price: 255,
+    price: 250,
     description: "Merupakan pengaplikasian serum yang menggunakan alat pada lapisan kulit yang disebut dermis",
     image:"assets/images/tr_MT.JPG",
    color: Colors.pink[100],
@@ -54,7 +54,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 5,
     title: "Radio Frequency",
-    price: 255,
+    price: 180,
     description: "Treatment yang mampu merangsang pembentukkan kolagen dibawah kulit yang dapat membuat wajah terasa lebih kencang, selain itu treatment ini dapat membakar lemak dan menghasilkan kulit yang kenyal dan lebih cerah.",
     image: "assets/images/radioF.JPG",
     color: Colors.pink[100],
@@ -63,7 +63,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 6,
     title: "Insta Glow Treatment",
-    price: 255,
+    price: 500,
     description: "Treatment perawatan yang membantu membuat kulit wajah lebih cerah serta merata dan memberikan hasil kulit wajah yang glowing dan lebih bersinar, perawatan ini bisa menghilangkan noda hitam pada wajah akibat sinar matahari.",
     image: "assets/images/Igt.JPG",
     color: Colors.pink[100],
@@ -72,7 +72,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 7,
     title: "Platelet Rich Plasma",
-    price: 255,
+    price: 500,
     description: "Treatment ini merupakan perawatan yang dapat memberikan efek peremajaan pada kulit seperti meningkatkan tekstur dan warna kulit",
     image: "assets/images/tr_PRP.JPG",
     color: Colors.pink[100],
@@ -81,7 +81,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 8,
     title: "Intense Pulsed Light",
-    price: 255,
+    price: 180,
     description: "Metode peremajaan tubuh dan kulit yang bertujuan untuk memperlambat proses penuaan khususnya melalui pendekatan internal.",
     image: "assets/images/tr_IPL.JPG",
     color: Colors.pink[100],
@@ -90,7 +90,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 9,
     title: "Laser Erbium",
-    price: 255,
+    price: 100,
     description: "Merupakan treatment yang bertujuan untuk peremajaan kulit khususnya untuk mengatasi kerutan halus karena penuaan treatment ini juga dapat merangsang pertumbuhan kolagen baru pada kulit dan penyembuhan dengan waktu yang relatif cepat.",
     image: "assets/images/tr_LE.JPG",
     color: Colors.pink[100],
@@ -99,7 +99,7 @@ List<Treatment> treatments = [
   Treatment(
     id: 10,
     title: "Laser Carbon Blackdoll",
-    price: 255,
+    price: 100,
     description: "Treatment untuk mencerahkan, mengurangi kerutan halus, mengecilkan pori, mencegah komedo dan jerawat. Kontrol minyak berlebih juga menyamarkan flek dan noda jerawat, menggunakan laser NDYAG dengan panjang gelombang 1064.",
     image: "assets/images/lcb.JPG",
     color: Colors.pink[100],
@@ -108,7 +108,7 @@ List<Treatment> treatments = [
    Treatment(
     id: 11,
     title: "Treadlift Non Needle PDO",
-    price: 255,
+    price: 1750,
     description: "Treatment tanam benang tanpa jarum, treatment ini juga menggunakan benang yang mirip dengan benang yang dipakai pada treatment Thread Lift konvensional. Namun, untuk mengencangkan kulit wajah, benang cukup dioleskan saja di kulit wajah.",
     image: "assets/images/tnn.JPG",
     color: Colors.pink[100],
