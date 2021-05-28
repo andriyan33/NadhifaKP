@@ -49,7 +49,7 @@ class FaqScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.pink)),
                     TextSpan(
                         text:
-                            '. Untuk ongkos kirimnya, dapat di check langsung yaa di website resmi!')
+                            '. Untuk ongkos kirimnya, dapat di check langsung yaa di website resmi! Oh iya, kita hanya melayani pesanan di hari senin s/d sabtu yaa. Dengan maksimal upload bukti transfer jam 17.00 WIB.')
                   ],
                 )),
             Container(height: 15),
@@ -83,7 +83,10 @@ class FaqScreen extends StatelessWidget {
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     TextSpan(
                         text:
-                            'Kami akan mengirimkan produk yang dipesan dan mengembalikan shipping fee terhadap produk yang dikembalikan pada kami seluruhnya.')
+                            'Kami akan mengirimkan produk yang dipesan dan mengembalikan shipping fee terhadap produk yang dikembalikan pada kami seluruhnya. '),
+                    TextSpan(
+                        text: 
+                        'Dengan syarat, produk dikembalikan dalam kondisi tersegel & belum dicoba/dipakai sama sekali. Pengajuan pengembalian maksimal diajukan H+1 minggu dari tanggal pengiriman dilakukan' )
                   ],
                 )),
             Container(height: 15),
@@ -292,6 +295,9 @@ class FaqScreen extends StatelessWidget {
                         text: 'Special Discount!',
                         style: TextStyle(fontWeight: FontWeight.w500)),
                     TextSpan(text: ' buat para member - membernya.'),
+                    TextSpan(
+                      text: 'Seru banget kan, yakin gak ngiler buat daftar member Nadhifa?'
+                    ),
                   ],
                 )),
             Container(height: 15),
@@ -328,7 +334,8 @@ class FaqScreen extends StatelessWidget {
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     TextSpan(
                         text:
-                            'bagi mama yang sedang hamil. Tunggu dedenya lahir dulu yaa kakak! 🖤')
+                            'bagi mama yang sedang hamil. Tunggu dedenya lahir dulu yaa kakak! 🖤'),
+                    TextSpan(text: 'Selain treatment yang disebut tadi, boleh kok aman. 🙂')
                   ],
                 )),
             Container(height: 15),

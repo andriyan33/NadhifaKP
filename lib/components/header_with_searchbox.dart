@@ -31,7 +31,7 @@ class HeaderWithSearchBox extends StatelessWidget {
               Image(
                 image: AssetImage('assets/Nadhifa.png'),
                 fit: BoxFit.fitWidth,
-                height: 172,
+                height: 135,
               ),
             ]),
           ),
